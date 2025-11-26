@@ -4,12 +4,14 @@ public class Customer extends Person {
     private int customerNumber;
     private boolean mailingList;
 
-    public Customer(int customerNumber, boolean mailingList) {
+    public Customer(String name, String address, String phoneNumber, int customerNumber, boolean mailingList) {
+        super(name, address, phoneNumber);
         this.customerNumber = customerNumber;
         this.mailingList = mailingList;
     }
 
     public Customer() {
+
         this.customerNumber = 0;
         this.mailingList = false;
     }
