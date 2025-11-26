@@ -1,17 +1,23 @@
 package ie.atu;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+public class Main{
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Person person1 = new Person();
+        person1.setName("John");
+        person1.setAddress("123 Street");
+        person1.setPhoneNumber("123456789");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        System.out.println(person1.toString());
+
+        Customer part1Customer = new Customer();
+        part1Customer.setName("Alice");
+        part1Customer.setAddress("123 Street");
+        part1Customer.setPhoneNumber("123456789");
+        part1Customer.setCustomerNumber(1001);
+        part1Customer.setMailingList(true);
+
+
+
+        System.out.println(part1Customer.toString());
     }
 }
